@@ -1,6 +1,8 @@
 body {
     margin: 0;
     font-family: 'Heebo', sans-serif;
+    padding-top: 80px;
+    height: 5000px;
 }
 
 .container {
@@ -22,7 +24,7 @@ header {
     top: 0;
     left: 0;
     width: 100%;
-    
+    z-index: 1;
 }
 
 header .container {
@@ -64,4 +66,66 @@ header nav ul li a {
 
 header nav ul li:last-of-type a {
     margin-right: 0;
+}
+
+section.hero {
+    position: relative;
+    z-index: 0;
+}
+
+section.hero img {
+    width: 100%;
+    height: auto;
+}
+
+.hero-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.hero-content .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+}
+
+.hero-content h1 {
+    max-width: 495px;
+    color: #fff;
+    font-size: 50px;
+    letter-spacing: 1.25px;
+    line-height: 56px;
+    margin-bottom: 16px;
+    margin-top: 0;
+}
+
+.hero-content p {
+    max-width: 518px;
+    color: #fff;
+    font-weight: 300;
+    font-size: 20px;
+    letter-spacing: 0.5px;
+    line-height: 28px;
+    margin-top: 0;
+    margin-bottom: 21px;
+}
+
+.hero-content button {
+    height: 50px;
+    width: 220px;
+    max-width: 100%;
+    border-radius: 92px;
+    background-color: #3E50E5;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 0.4px;
+    line-height: 24px;
+    text-align: center;
+    border: none;
+    text-transform: uppercase;
 }
